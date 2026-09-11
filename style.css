@@ -1,41 +1,330 @@
-/* Basic page setup */
-
+/* NOTE: This reset makes sizing predictable across the whole website. */
 * {
     box-sizing: border-box;
 }
 
+
+/* NOTE: These are the main colors and typography used throughout the portfolio. */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #f5f7f7;
     color: #172033;
 }
+
+
+/* NOTE: The header creates the dark professional navigation bar with the teal accent line. */
 header {
     background-color: #172033;
     color: white;
     padding: 20px 40px;
     border-bottom: 4px solid #0f766e;
-     display: flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
 }
-}
+
 header h1 {
     margin: 0;
     font-size: 28px;
 }
-nav a {
-    color: white;
-    text-decoration: none;
-    margin-right: 20px;
-}
+
+
+/* NOTE: These rules arrange the navigation links horizontally and create a simple hover effect. */
 nav {
     display: flex;
     gap: 20px;
 }
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
 nav a:hover {
     color: #ccfbf1;
 }
+
+
+/* NOTE: Each section gets the same centered width and comfortable spacing as the sample. */
 section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 70px 40px;
+}
+
+section h2 {
+    font-size: 32px;
+    margin: 0 0 30px 0;
+}
+
+
+/* NOTE: This creates the three-column card layout used by the content sections. */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+
+/* NOTE: This creates the white cards with teal top borders and subtle shadows from the sample style. */
+.card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    border-top: 4px solid #0f766e;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+
+/* NOTE: These rules control the typography inside the cards. */
+.card h3 {
+    margin-top: 0;
+    color: #0f766e;
+}
+
+.card h4 {
+    margin-bottom: 10px;
+    color: #172033;
+}
+
+.card p {
+    line-height: 1.6;
+    color: #4b5563;
+}
+
+.card a {
+    color: #0f766e;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.card a:hover {
+    color: #172033;
+}
+
+.technology,
+.issuer {
+    font-size: 14px;
+}
+
+
+/* NOTE: The hero uses two columns: your introduction on the left and your photo on the right. */
+#home {
+    max-width: 1200px;
+    min-height: 600px;
+    margin: 0 auto;
     padding: 80px 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+
+/* NOTE: This prevents the hero content from accidentally receiving the card styling. */
+.hero-text,
+.hero-image {
+    background-color: transparent;
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+
+/* NOTE: This creates the small introduction line above your name. */
+.hero-intro {
+    margin: 0 0 5px 0;
+    font-size: 20px;
+    color: #172033;
+}
+
+
+/* NOTE: This makes your name the main visual focus of the hero. */
+#home h2 {
+    margin: 0 0 10px 0;
+    font-size: 52px;
+    color: #172033;
+}
+
+
+/* NOTE: The teal subtitle matches the main accent color used throughout the site. */
+#home h3 {
+    margin: 0 0 15px 0;
+    font-size: 25px;
+    color: #0f766e;
+}
+
+
+/* NOTE: This styles only the main hero paragraph, keeping it readable and limited in width. */
+.hero-text > p:not(.hero-intro) {
+    max-width: 600px;
+    margin: 0;
+    line-height: 1.7;
+    color: #4b5563;
+}
+
+
+/* NOTE: The hero buttons sit below the paragraph; the first is a text link and the second is a filled button. */
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.hero-buttons a {
+    display: inline-block;
+    margin: 0;
+    color: #0f766e;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.hero-buttons a:hover {
+    color: #172033;
+}
+
+.hero-buttons a:last-child {
+    background-color: #0f766e;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 6px;
+}
+
+.hero-buttons a:last-child:hover {
+    background-color: #172033;
+    color: white;
+}
+
+
+/* NOTE: This controls the circular profile image on the right side of the hero. */
+.hero-image {
+    flex: 0 0 280px;
+}
+
+#home img {
+    display: block;
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #0f766e;
+}
+
+
+/* NOTE: The About and Contact content stays readable instead of being forced into card columns. */
+.about-content,
+.contact-content {
+    max-width: 800px;
+}
+
+.about-content p,
+.contact-content p {
+    line-height: 1.7;
+    color: #4b5563;
+}
+
+.contact-content a {
+    color: #0f766e;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.contact-content a:hover {
+    color: #172033;
+}
+
+
+/* NOTE: Alternating backgrounds give the page the clean section separation seen in the sample. */
+section:nth-of-type(even) {
+    background-color: white;
+}
+
+
+/* NOTE: The footer provides the dark closing area with the same teal accent used in the header. */
+footer {
+    background-color: #172033;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    border-top: 4px solid #0f766e;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+/* NOTE: These responsive rules make the navigation, hero, and cards work on smaller screens. */
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    section {
+        padding: 60px 20px;
+    }
+
+    #home {
+        flex-direction: column;
+        text-align: center;
+        min-height: auto;
+        padding: 60px 20px;
+    }
+
+    .hero-text {
+        width: 100%;
+    }
+
+    #home h2 {
+        font-size: 38px;
+    }
+
+    #home h3 {
+        font-size: 22px;
+    }
+
+    .hero-text > p:not(.hero-intro) {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .hero-image {
+        flex: none;
+    }
+
+    #home img {
+        width: 220px;
+        height: 220px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
 }

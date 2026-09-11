@@ -2,375 +2,343 @@
 <html>
 <head>
     <title>My Portfolio</title>
-<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<header>
 
-    <h1>Eto Ashenafi</h1>
+    <!-- NOTE: This header creates the dark navigation bar at the top of the portfolio. -->
+    <header>
+        <h1>Eto Ashenafi</h1>
 
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#education">Education</a>
-        <a href="#experience">Experience</a>
-        <a href="#certificates">Certificates</a>
-        <a href="#activities">Activities</a>
-        <a href="#contact">Contact</a>
-    </nav>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#education">Education</a>
+            <a href="#experience">Experience</a>
+            <a href="#certificates">Certificates</a>
+            <a href="#activities">Activities</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-</header>
+
+    <!-- NOTE: The hero section introduces you, places the buttons below the paragraph, and puts your photo on the right. -->
     <section id="home">
 
-    <div>
-        <h2>Hello, I'm Eto Ashenafi</h2>
+        <div class="hero-text">
 
-        <h3>Aspiring Software Engineer</h3>
+            <p class="hero-intro">Hello, I'm</p>
 
-        <p>
-            I am an aspiring software engineer interested in building useful
-            software, learning through projects, and developing my technical skills.
-        </p>
-<div>
+            <h2>Eto Ashenafi</h2>
 
-    <a href="#projects">View Projects</a>
+            <h3>Aspiring Software Engineer</h3>
 
-    <a href="#contact">Contact Me</a>
-    </div>
+            <p>
+                I am an aspiring software engineer interested in building useful
+                software, learning through projects, and developing my technical skills.
+            </p>
 
-    <div>
-        <img src="profile.jpg">
-    </div>
+            <!-- NOTE: The first link is a simple text link and the second link is the filled teal button. -->
+            <div class="hero-buttons">
+                <a href="#projects">View Projects</a>
+                <a href="#contact">Contact Me</a>
+            </div>
 
-</section>
-    
-<section id="about">
-
-    <h2>About Me</h2>
-
-    <p>
-        I am an aspiring software engineer currently developing my skills
-        in web development and programming.
-    </p>
-
-    <p>
-        I enjoy learning by building projects and understanding how
-        technology can be used to solve real-world problems.
-    </p>
-
-    <p>
-        My goal is to continue developing my technical skills and
-        eventually build useful software products and systems.
-    </p>
-
-</section>
-    
-<section id="skills">
-
-    <h2>Skills</h2>
-
-    <div>
-
-        <div>
-            <h3>Web Development</h3>
-            <p>HTML, CSS, JavaScript</p>
         </div>
 
-        <div>
-            <h3>Programming</h3>
-            <p>Python, JavaScript</p>
+        <!-- NOTE: This container keeps the profile image separate from the hero text. -->
+        <div class="hero-image">
+            <img src="profile.jpg" alt="Photo of Eto Ashenafi">
         </div>
 
-        <div>
-            <h3>Tools</h3>
-            <p>Git, GitHub</p>
+    </section>
+
+
+    <!-- NOTE: This section introduces your background and current direction. -->
+    <section id="about">
+
+        <h2>About Me</h2>
+
+        <div class="about-content">
+            <p>
+                I am an aspiring software engineer currently developing my skills
+                in web development and programming.
+            </p>
+
+            <p>
+                I enjoy learning by building projects and understanding how
+                technology can be used to solve real-world problems.
+            </p>
+
+            <p>
+                My goal is to continue developing my technical skills and
+                eventually build useful software products and systems.
+            </p>
         </div>
 
-    </div>
+    </section>
 
-</section>
+
+    <!-- NOTE: The skills section uses three clean cards like the sample design. -->
+    <section id="skills">
+
+        <h2>Skills</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Web Development</h3>
+                <p>HTML, CSS, JavaScript</p>
+            </div>
+
+            <div class="card">
+                <h3>Programming</h3>
+                <p>Python, JavaScript</p>
+            </div>
+
+            <div class="card">
+                <h3>Tools</h3>
+                <p>Git, GitHub</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- NOTE: The projects section presents each project as an individual card. -->
     <section id="projects">
 
-    <h2>Projects</h2>
+        <h2>Projects</h2>
 
-    <div>
+        <div class="cards">
 
-        <div>
-            <h3>Personal Portfolio Website</h3>
+            <div class="card">
+                <h3>Personal Portfolio Website</h3>
 
-            <p>
-                A personal portfolio website built from scratch
-                to practice web development and showcase my work.
-            </p>
+                <p>
+                    A personal portfolio website built from scratch
+                    to practice web development and showcase my work.
+                </p>
 
-            <p>
-                HTML • CSS • JavaScript
-            </p>
+                <p class="technology">HTML • CSS • JavaScript</p>
 
-            <a href="#">View Project</a>
+                <a href="#">View Project →</a>
+            </div>
+
+            <div class="card">
+                <h3>Project Two</h3>
+
+                <p>
+                    A project that I built to practice programming,
+                    problem solving, and software development.
+                </p>
+
+                <p class="technology">Python • JavaScript</p>
+
+                <a href="#">View Project →</a>
+            </div>
+
         </div>
 
+    </section>
 
-        <div>
-            <h3>Project Two</h3>
 
-            <p>
-                A project that I built to practice programming,
-                problem solving, and software development.
-            </p>
+    <!-- NOTE: The education section shows your school and university path in separate cards. -->
+    <section id="education">
 
-            <p>
-                Python • JavaScript
-            </p>
+        <h2>Education</h2>
 
-            <a href="#">View Project</a>
+        <div class="cards">
+
+            <div class="card">
+                <h3>Pan Nation Academy</h3>
+                <h4>High School Education</h4>
+
+                <p>
+                    Completed secondary education with a focus on mathematics,
+                    science, and technology.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Addis Ababa University</h3>
+                <h4>Your Major</h4>
+
+                <p>
+                    Currently pursuing higher education and developing my
+                    knowledge and skills in my chosen field.
+                </p>
+            </div>
+
         </div>
 
-    </div>
+    </section>
 
-</section>
-<section id="education">
 
-    <h2>Education</h2>
+    <!-- NOTE: Experience is kept separate from education so future internships and work can be added clearly. -->
+    <section id="experience">
 
-    <div>
+        <h2>Experience</h2>
 
-        <div>
-            <h3>Pan Nation Academy</h3>
+        <div class="cards">
 
-            <h4>High School Education</h4>
+            <div class="card">
+                <h3>Experience Title</h3>
+                <h4>Organization Name</h4>
 
-            <p>
-                Completed secondary education with a focus on mathematics,
-                science, and technology.
-            </p>
+                <p>
+                    A short description of what I did, what I learned,
+                    and the skills I developed through this experience.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Experience Title</h3>
+                <h4>Organization Name</h4>
+
+                <p>
+                    A short description of my responsibilities,
+                    contributions, and what I learned from this experience.
+                </p>
+            </div>
+
         </div>
 
-        <div>
-            <h3>Addis Ababa University</h3>
+    </section>
 
-            <h4>Your Major</h4>
 
-            <p>
-                Currently pursuing higher education and developing my
-                knowledge and skills in my chosen field.
-            </p>
-        </div>
-
-    </div>
-
-</section>
-
-<section id="experience">
-
-    <h2>Experience</h2>
-
-    <div>
-
-        <div>
-            <h3>Experience Title</h3>
-
-            <h4>Organization Name</h4>
-
-            <p>
-                A short description of what I did, what I learned,
-                and the skills I developed through this experience.
-            </p>
-        </div>
-
-        <div>
-            <h3>Experience Title</h3>
-
-            <h4>Organization Name</h4>
-
-            <p>
-                A short description of my responsibilities,
-                contributions, and what I learned from this experience.
-            </p>
-        </div>
-
-    </div>
-
-</section>
-
+    <!-- NOTE: Certificates are displayed as cards with a short description and a link to each certificate. -->
     <section id="certificates">
 
-    <h2>Certificates</h2>
+        <h2>Certificates</h2>
 
-    <div>
+        <div class="cards">
 
-        <div>
-            <h3>Certificate Name</h3>
+            <div class="card">
+                <h3>Certificate Name</h3>
 
-            <p>
-                A short description of what this certificate represents
-                and what I learned.
-            </p>
+                <p>
+                    A short description of what this certificate represents
+                    and what I learned.
+                </p>
 
-            <p>
-                Issued by: Organization Name
-            </p>
+                <p class="issuer">Issued by: Organization Name</p>
 
-            <a href="#">View Certificate</a>
+                <a href="#">View Certificate →</a>
+            </div>
+
+            <div class="card">
+                <h3>Certificate Name</h3>
+
+                <p>
+                    A short description of the course, program, or skills
+                    covered by this certificate.
+                </p>
+
+                <p class="issuer">Issued by: Organization Name</p>
+
+                <a href="#">View Certificate →</a>
+            </div>
+
+            <div class="card">
+                <h3>Certificate Name</h3>
+
+                <p>
+                    A short description of the knowledge or skills
+                    demonstrated by this certificate.
+                </p>
+
+                <p class="issuer">Issued by: Organization Name</p>
+
+                <a href="#">View Certificate →</a>
+            </div>
+
         </div>
 
-        <div>
-            <h3>Certificate Name</h3>
+    </section>
 
-            <p>
-                A short description of the course, program, or skills
-                covered by this certificate.
-            </p>
 
-            <p>
-                Issued by: Organization Name
-            </p>
-
-            <a href="#">View Certificate</a>
-        </div>
-
-        <div>
-            <h3>Certificate Name</h3>
-
-            <p>
-                A short description of the knowledge or skills
-                demonstrated by this certificate.
-            </p>
-
-            <p>
-                Issued by: Organization Name
-            </p>
-
-            <a href="#">View Certificate</a>
-        </div>
-
-    </div>
-
-</section><section id="certificates">
-
-    <h2>Certificates</h2>
-
-    <div>
-
-        <div>
-            <h3>Certificate Name</h3>
-
-            <p>
-                A short description of what this certificate represents
-                and what I learned.
-            </p>
-
-            <p>
-                Issued by: Organization Name
-            </p>
-
-            <a href="#">View Certificate</a>
-        </div>
-
-        <div>
-            <h3>Certificate Name</h3>
-
-            <p>
-                A short description of the course, program, or skills
-                covered by this certificate.
-            </p>
-
-            <p>
-                Issued by: Organization Name
-            </p>
-
-            <a href="#">View Certificate</a>
-        </div>
-
-        <div>
-            <h3>Certificate Name</h3>
-
-            <p>
-                A short description of the knowledge or skills
-                demonstrated by this certificate.
-            </p>
-
-            <p>
-                Issued by: Organization Name
-            </p>
-
-            <a href="#">View Certificate</a>
-        </div>
-
-    </div>
-
-</section>
+    <!-- NOTE: This section contains activities outside the main education and experience sections. -->
     <section id="activities">
 
-    <h2>Other Activities</h2>
+        <h2>Other Activities</h2>
 
-    <div>
+        <div class="cards">
 
-        <div>
-            <h3>Content Creation</h3>
+            <div class="card">
+                <h3>Content Creation</h3>
 
-            <p>
-                Creating and exploring digital content while developing
-                communication, creativity, and technical skills.
-            </p>
+                <p>
+                    Creating and exploring digital content while developing
+                    communication, creativity, and technical skills.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Competitions & Projects</h3>
+
+                <p>
+                    Participated in academic and school projects that helped
+                    me develop problem-solving and teamwork skills.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Other Interests</h3>
+
+                <p>
+                    Exploring technology, software development, business,
+                    and new ideas through independent learning.
+                </p>
+            </div>
+
         </div>
 
-        <div>
-            <h3>Competitions & Projects</h3>
+    </section>
 
-            <p>
-                Participated in academic and school projects that helped
-                me develop problem-solving and teamwork skills.
-            </p>
-        </div>
 
-        <div>
-            <h3>Other Interests</h3>
-
-            <p>
-                Exploring technology, software development, business,
-                and new ideas through independent learning.
-            </p>
-        </div>
-
-    </div>
-
-</section>
+    <!-- NOTE: The contact section gives visitors simple ways to connect with you. -->
     <section id="contact">
 
-    <h2>Contact Me</h2>
+        <h2>Contact Me</h2>
 
-    <p>
-        If you would like to connect with me, discuss a project,
-        or learn more about my work, feel free to get in touch.
-    </p>
+        <div class="contact-content">
 
-    <p>
-        Email:
-        <a href="mailto:your-email@example.com">
-            your-email@example.com
-        </a>
-    </p>
+            <p>
+                If you would like to connect with me, discuss a project,
+                or learn more about my work, feel free to get in touch.
+            </p>
 
-    <p>
-        GitHub:
-        <a href="#">My GitHub</a>
-    </p>
+            <p>
+                Email:
+                <a href="mailto:your-email@example.com">
+                    your-email@example.com
+                </a>
+            </p>
 
-    <p>
-        LinkedIn:
-        <a href="#">My LinkedIn</a>
-    </p>
+            <p>
+                GitHub:
+                <a href="#">My GitHub</a>
+            </p>
 
-</section>
+            <p>
+                LinkedIn:
+                <a href="#">My LinkedIn</a>
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- NOTE: The footer closes the page with your name and copyright year. -->
     <footer>
+        <p>© 2026 Eto Ashenafi. All rights reserved.</p>
+    </footer>
 
-    <p>
-        © 2026 Your Name. All rights reserved.
-    </p>
-
-</footer>
 </body>
 </html>
