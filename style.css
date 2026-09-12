@@ -270,21 +270,21 @@ footer p {
 /* NOTE: These responsive rules make the navigation, hero, and cards work on smaller screens. */
 @media (max-width: 768px) {
 
-    header {
-        flex-direction: column;
-        gap: 20px;
-        text-align: center;
-    }
+  /* NOTE: On small screens, the header keeps only your name visible. */
+header {
+    justify-content: center;
+    padding: 18px 20px;
+}
 
-    nav {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 12px;
-    }
+/* NOTE: The navigation links disappear on small screens. */
+nav {
+    display: none;
+}
 
-    section {
-        padding: 60px 20px;
-    }
+/* NOTE: Your name becomes slightly smaller on small screens. */
+header h1 {
+    font-size: 24px;
+}
 
     #home {
         flex-direction: column;
