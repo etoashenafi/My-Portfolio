@@ -270,16 +270,28 @@ footer p {
 /* NOTE: These responsive rules make the navigation, hero, and cards work on smaller screens. */
 @media (max-width: 768px) {
 
-  /* NOTE: On small screens, the header keeps only your name visible. */
-header {
-    justify-content: center;
-    padding: 18px 20px;
-}
+    /* NOTE: On small screens, the name and menu button stay on the same line. */
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 18px 20px;
+    }
 
-/* NOTE: The navigation links disappear on small screens. */
-nav {
-    display: none;
-}
+    /* NOTE: The navigation links are hidden until JavaScript opens the menu. */
+    nav {
+        display: none;
+    }
+
+    /* NOTE: The menu button stays beside your name on small screens. */
+    #menu-button {
+        display: block;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 28px;
+        cursor: pointer;
+    }
+
 
 /* NOTE: Your name becomes slightly smaller on small screens. */
 header h1 {
