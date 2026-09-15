@@ -3,11 +3,17 @@ const navigation = document.querySelector("nav");
 
 // NOTE: This checks whether JavaScript successfully found the navigation.
 console.log(navigation);
+
 // NOTE: This finds the mobile menu button from our HTML.
 const menuButton = document.querySelector("#menu-button");
-// NOTE: This lets us check that JavaScript successfully found the button.
+
+// NOTE: This checks whether JavaScript successfully found the button.
 console.log(menuButton);
+
 // NOTE: This waits for the user to click the menu button.
 menuButton.addEventListener("click", function() {
-    console.log("Menu button clicked!");
+
+    // NOTE: This adds or removes the "menu-open" class from the navigation.
+    navigation.classList.toggle("menu-open");
+
 });
