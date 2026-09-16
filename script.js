@@ -1,19 +1,39 @@
-// NOTE: This finds the navigation element from our HTML and stores it in a variable.
-const navigation = document.querySelector("nav");
+// Wait until the HTML is fully loaded
+document.addEventListener("DOMContentLoaded", function() {
 
-// NOTE: This checks whether JavaScript successfully found the navigation.
-console.log(navigation);
+    // Find the navigation inside the header
+    const navigation = document.querySelector("header > nav");
 
-// NOTE: This finds the mobile menu button from our HTML.
-const menuButton = document.querySelector("#menu-button");
+    // Find the menu button using its ID
+    const menuButton = document.querySelector("#menu-button");
 
-// NOTE: This checks whether JavaScript successfully found the button.
-console.log(menuButton);
+    // Check if both elements were found
+    console.log(navigation);
+    console.log(menuButton);
 
-// NOTE: This waits for the user to click the menu button.
-menuButton.addEventListener("click", function() {
+    // Stop if an element is missing
+    if (!navigation || !menuButton) {
+        console.error("Menu navigation or menu button was not found.");
+        return;
+    }
 
-    // NOTE: This adds or removes the "menu-open" class from the navigation.
-    navigation.classList.toggle("menu-open");
+    // Listen for a click on the menu button
+    menuButton.addEventListener("click", function() {
+
+        // Add/remove "menu-open" to show/hide the menu
+        navigation.classList.toggle("menu-open");
+
+        // Check if the menu is currently open
+        const isOpen = navigation.classList.contains("menu-open");
+
+        // Update accessibility information
+        menuButton.setAttribute("aria-expanded", isOpen);
+
+        // Change the button label
+        menuButton.setAttribute(
+            "aria-label",
+            isOpen ? "Close menu" : "Open menu"
+        );
+    });
 
 });

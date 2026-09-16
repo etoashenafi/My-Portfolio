@@ -1,20 +1,26 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+    <!-- NOTE: Page title shown in the browser tab -->
     <title>Eto Ashenafi</title>
+
+    <!-- NOTE: Connect HTML to the CSS file -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- NOTE: This header creates the dark navigation bar at the top of the portfolio. -->
+    <!-- NOTE: Header = website name + navigation -->
     <header>
+
+        <!-- NOTE: Website title -->
         <h1>Personal Website</h1>
 
-<!-- NOTE: This button will later open and close the navigation menu on mobile. -->
-<button id="menu-button">☰</button>
+        <!-- NOTE: Mobile button for opening the menu -->
+        <button id="menu-button" aria-label="Open navigation menu">☰</button>
 
-<nav>
+        <!-- NOTE: Navigation = links to each section -->
         <nav>
             <a href="#home">Home</a>
             <a href="#about">About</a>
@@ -26,25 +32,32 @@
             <a href="#activities">Activities</a>
             <a href="#contact">Contact</a>
         </nav>
+
     </header>
 
 
-    <!-- NOTE: The hero section introduces you, places the buttons below the paragraph, and puts your photo on the right. -->
+    <!-- NOTE: Hero = first section visitors see -->
     <section id="home">
 
+        <!-- NOTE: Hero text contains your introduction -->
         <div class="hero-text">
 
             <p class="hero-intro">Hello, I'm</p>
 
+            <!-- NOTE: Main name heading -->
             <h2>Eto Ashenafi</h2>
 
+            <!-- NOTE: Professional title -->
             <h3>Aspiring Software Engineer • Future Startup Founder</h3>
 
+            <!-- NOTE: Short introduction -->
             <p>
-           I’m a student developer building my skills in software engineering, AI, and entrepreneurship through practical projects and real-world problem solving.
+                I’m a student developer building my skills in software engineering,
+                AI, and entrepreneurship through practical projects and real-world
+                problem solving.
             </p>
 
-            <!-- NOTE: The first link is a simple text link and the second link is the filled teal button. -->
+            <!-- NOTE: Links/buttons for important actions -->
             <div class="hero-buttons">
                 <a href="#projects">View Projects</a>
                 <a href="#contact">Contact Me</a>
@@ -52,44 +65,65 @@
 
         </div>
 
-        <!-- NOTE: This container keeps the profile image separate from the hero text. -->
+
+        <!-- NOTE: Hero image container -->
         <div class="hero-image">
+
+            <!-- NOTE: Profile image -->
             <img src="profile.jpg" alt="Photo of Eto Ashenafi">
+
         </div>
 
     </section>
 
 
-    <!-- NOTE: This section introduces your background and current direction. -->
+    <!-- NOTE: About = background and personal introduction -->
     <section id="about">
 
         <h2>About Me</h2>
 
+        <!-- NOTE: Container for About text -->
         <div class="about-content">
-            
+
             <p>
-                My interest in technology started with simply wanting to understand how things work and how software can be used to solve problems. Over time, that interest grew beyond writing code. I became increasingly interested in the problems behind the technology, how businesses operate, how markets create demand, how supply chains move products, and how well designed systems can make those processes more efficient. 
+                My interest in technology started with simply wanting to understand
+                how things work and how software can be used to solve problems.
+                Over time, that interest grew beyond writing code. I became
+                increasingly interested in the problems behind the technology,
+                how businesses operate, how markets create demand, how supply
+                chains move products, and how well designed systems can make
+                those processes more efficient.
             </p>
 
             <p>
-               Today, I’m developing my foundation in software development, artificial intelligence, and business, while actively turning what I learn into projects. I enjoy building things from the ground up, experimenting with ideas, and learning by actually creating rather than only studying theory.
+                Today, I’m developing my foundation in software development,
+                artificial intelligence, and business, while actively turning
+                what I learn into projects. I enjoy building things from the
+                ground up, experimenting with ideas, and learning by actually
+                creating rather than only studying theory.
             </p>
 
             <p>
-              I’m still early in that journey, which is exactly what makes it exciting. Every project, internship, course, and problem I work on is another opportunity to turn an idea into something real.
-                </p>
+                I’m still early in that journey, which is exactly what makes
+                it exciting. Every project, internship, course, and problem
+                I work on is another opportunity to turn an idea into
+                something real.
+            </p>
+
         </div>
 
     </section>
 
 
-    <!-- NOTE: The skills section uses three clean cards like the sample design. -->
+    <!-- NOTE: Skills = technologies and tools you know -->
     <section id="skills">
 
         <h2>Skills</h2>
 
+        <!-- NOTE: "cards" groups multiple cards together -->
         <div class="cards">
 
+            <!-- NOTE: One skill card -->
             <div class="card">
                 <h3>Web Development</h3>
                 <p>HTML, CSS, JavaScript</p>
@@ -110,14 +144,16 @@
     </section>
 
 
-    <!-- NOTE: The projects section presents each project as an individual card. -->
+    <!-- NOTE: Projects = things you have built -->
     <section id="projects">
 
         <h2>Projects</h2>
 
         <div class="cards">
 
+            <!-- NOTE: Each project gets its own card -->
             <div class="card">
+
                 <h3>Personal Portfolio Website</h3>
 
                 <p>
@@ -125,12 +161,16 @@
                     to practice web development and showcase my work.
                 </p>
 
+                <!-- NOTE: Technologies used in the project -->
                 <p class="technology">HTML • CSS • JavaScript</p>
 
                 <a href="#">View Project →</a>
+
             </div>
 
+
             <div class="card">
+
                 <h3>Project Two</h3>
 
                 <p>
@@ -141,6 +181,7 @@
                 <p class="technology">Python • JavaScript</p>
 
                 <a href="#">View Project →</a>
+
             </div>
 
         </div>
@@ -148,7 +189,7 @@
     </section>
 
 
-    <!-- NOTE: The education section shows your school and university path in separate cards. -->
+    <!-- NOTE: Education = schools and academic background -->
     <section id="education">
 
         <h2>Education</h2>
@@ -156,23 +197,33 @@
         <div class="cards">
 
             <div class="card">
+
+                <!-- NOTE: School name -->
                 <h3>Pan Nation Academy</h3>
+
+                <!-- NOTE: Degree or education level -->
                 <h4>High School Education</h4>
 
+                <!-- NOTE: Short description -->
                 <p>
                     Completed secondary education with a focus on mathematics,
                     science, and technology.
                 </p>
+
             </div>
 
+
             <div class="card">
+
                 <h3>Addis Ababa University</h3>
+
                 <h4>Your Major</h4>
 
                 <p>
-                    Currently pursuing higher education and developing my
-                    knowledge and skills in my chosen field.
+                    Currently pursuing higher education and developing
+                    my knowledge and skills in my chosen field.
                 </p>
+
             </div>
 
         </div>
@@ -180,7 +231,7 @@
     </section>
 
 
-    <!-- NOTE: Experience is kept separate from education so future internships and work can be added clearly. -->
+    <!-- NOTE: Experience = internships, work, or practical experience -->
     <section id="experience">
 
         <h2>Experience</h2>
@@ -188,23 +239,30 @@
         <div class="cards">
 
             <div class="card">
+
                 <h3>Experience Title</h3>
+
                 <h4>Organization Name</h4>
 
                 <p>
                     A short description of what I did, what I learned,
                     and the skills I developed through this experience.
                 </p>
+
             </div>
 
+
             <div class="card">
+
                 <h3>Experience Title</h3>
+
                 <h4>Organization Name</h4>
 
                 <p>
                     A short description of my responsibilities,
                     contributions, and what I learned from this experience.
                 </p>
+
             </div>
 
         </div>
@@ -212,7 +270,7 @@
     </section>
 
 
-    <!-- NOTE: Certificates are displayed as cards with a short description and a link to each certificate. -->
+    <!-- NOTE: Certificates = completed courses and certifications -->
     <section id="certificates">
 
         <h2>Certificates</h2>
@@ -220,30 +278,53 @@
         <div class="cards">
 
             <div class="card">
-                <h3> Intro to Programming</h3>
+
+                <h3>Intro to Programming</h3>
 
                 <p>
-                  Completed foundational training in computer programming, learning the core principles of how code is structured and executed. Built a strong base in web development logic and computational thinking, which I am now expanding through Full-Stack JavaScript and modern development frameworks.
+                    Completed foundational training in computer programming,
+                    learning the core principles of how code is structured
+                    and executed. Built a strong base in web development
+                    logic and computational thinking, which I am now
+                    expanding through Full-Stack JavaScript and modern
+                    development frameworks.
                 </p>
 
+                <!-- NOTE: Certificate provider -->
                 <p class="issuer">Issued by: Udacity</p>
 
-                <a href="https://www.udacity.com/certificate/e/68a0f0e4-fff7-11f0-8151-9758fc7873db">View Certificate →</a>
+                <!-- NOTE: Link to the certificate -->
+                <a href="https://www.udacity.com/certificate/e/68a0f0e4-fff7-11f0-8151-9758fc7873db">
+                    View Certificate →
+                </a>
+
             </div>
 
+
             <div class="card">
+
                 <h3>AI Programming with Python</h3>
 
                 <p>
-                    Completed an intensive introduction to Artificial Intelligence and its practical applications using Python. Gained foundational exposure to machine learning concepts, neural networks, and the logic behind AI-driven systems. This certificate sparked my long-term focus on building intelligent, automated software solutions.
+                    Completed an intensive introduction to Artificial
+                    Intelligence and its practical applications using Python.
+                    Gained foundational exposure to machine learning concepts,
+                    neural networks, and the logic behind AI-driven systems.
+                    This certificate sparked my long-term focus on building
+                    intelligent, automated software solutions.
                 </p>
 
                 <p class="issuer">Issued by: Udacity</p>
 
-                <a href="https://www.udacity.com/certificate/e/b505831a-0000-11f1-839d-ff7909d31f37">View Certificate →</a>
+                <a href="https://www.udacity.com/certificate/e/b505831a-0000-11f1-839d-ff7909d31f37">
+                    View Certificate →
+                </a>
+
             </div>
 
+
             <div class="card">
+
                 <h3>Certificate Name</h3>
 
                 <p>
@@ -254,6 +335,7 @@
                 <p class="issuer">Issued by: Organization Name</p>
 
                 <a href="#">View Certificate →</a>
+
             </div>
 
         </div>
@@ -261,7 +343,7 @@
     </section>
 
 
-    <!-- NOTE: This section contains activities outside the main education and experience sections. -->
+    <!-- NOTE: Activities = other things you do outside the main sections -->
     <section id="activities">
 
         <h2>Other Activities</h2>
@@ -270,7 +352,6 @@
 
             <div class="card">
                 <h3>Content Creation</h3>
-
                 <p>
                     Creating and exploring digital content while developing
                     communication, creativity, and technical skills.
@@ -278,8 +359,7 @@
             </div>
 
             <div class="card">
-                <h3>Competitions & Projects</h3>
-
+                <h3>Competitions &amp; Projects</h3>
                 <p>
                     Participated in academic and school projects that helped
                     me develop problem-solving and teamwork skills.
@@ -288,7 +368,6 @@
 
             <div class="card">
                 <h3>Other Interests</h3>
-
                 <p>
                     Exploring technology, software development, business,
                     and new ideas through independent learning.
@@ -300,11 +379,12 @@
     </section>
 
 
-    <!-- NOTE: The contact section gives visitors simple ways to connect with you. -->
+    <!-- NOTE: Contact = ways people can reach you -->
     <section id="contact">
 
         <h2>Contact Me</h2>
 
+        <!-- NOTE: Container for contact information -->
         <div class="contact-content">
 
             <p>
@@ -314,9 +394,7 @@
 
             <p>
                 Email:
-                <a href="mailto:etoashenafi18@gmail.com">
-                    My Email
-                </a>
+                <a href="mailto:etoashenafi18@gmail.com">My Email</a>
             </p>
 
             <p>
@@ -326,7 +404,9 @@
 
             <p>
                 LinkedIn:
-                <a href="https://www.linkedin.com/in/eto-ashenafi">My LinkedIn</a>
+                <a href="https://www.linkedin.com/in/eto-ashenafi">
+                    My LinkedIn
+                </a>
             </p>
 
         </div>
@@ -334,13 +414,16 @@
     </section>
 
 
-    <!-- NOTE: The footer closes the page with your name and copyright year. -->
+    <!-- NOTE: Footer = bottom of the website -->
     <footer>
+
         <p>© 2026 Eto Ashenafi. All rights reserved.</p>
+
     </footer>
 
-    <!-- NOTE: This connects our JavaScript file to the HTML page. -->
-<script src="script.js"></script>
-    
+
+    <!-- NOTE: Connect HTML to JavaScript -->
+    <script src="script.js"></script>
+
 </body>
 </html>
